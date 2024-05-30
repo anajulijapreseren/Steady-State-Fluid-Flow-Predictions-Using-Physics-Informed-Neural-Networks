@@ -15,7 +15,7 @@ config = {
     'dropout_rate': 0.0,
     'use_skip_connections': False,
     'init_type': 'kaiming',
-    'alpha': 1,  # Weight for boundary loss 10 is better
+    'alpha': 10,  # Weight for boundary loss 10 is better
 }
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
